@@ -1,22 +1,11 @@
-from webbrowser import Chrome
-from numpy import real, true_divide
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.select import Select
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import pandas as pd
-import pyautogui
-import requests
 import time
 import os
-from sys import exit
 
 
 #Global Variables

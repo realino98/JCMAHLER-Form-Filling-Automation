@@ -4,14 +4,19 @@ This script automate fill forms in "https://intranet.hlb.global"
 ## How to
 1. make sure to add the chromedriver.exe (which I already provide it in the folder) to PATH (environmental variable)
 if you don't know how you can watch youtube like this example https://www.youtube.com/watch?v=dz59GsdvUF8&ab_channel=ArturSpirin
-2. Install dependecies
-3. run the script file
+2. Install dependecies:
+    - Python https://www.python.org/downloads/
+    - Open terminal (CMD) and type
+    - pip install selenium
+    - pip install pandas
+3. run the script file (main.py)
 4. if the chromedriver doesn't work. update the chromedriver from https://chromedriver.chromium.org/downloads
 ## Feature
 1. Automating form filling to fill forms from excel
 
 ## Do's:
 1. modify the data in the "Main" sheet in data.xlsx
+2. you can run the script from main.py
 
 
 ## Don'ts:
