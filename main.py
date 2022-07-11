@@ -60,7 +60,9 @@ def executeFormFill(df, data_no):
         pass
     #interest
     # driver.find_element(By.XPATH, "/html/body/div[1]/div/div/article/div/div/div[2]/div/div/div/div/div/div/form/div[7]/div/div/div/span/span/span[1]/span/ul/li/input").click()
-    driver.find_element(By.XPATH, "/html/body/div[1]/div/div/article/div/div/div[2]/div/div/div/div/div/div/form/div[7]/div/div/div/span/span/span[1]/span/ul/li/input").send_keys(df["interest"][data_no], Keys.ENTER)
+    interests = df["interest"][data_no].replace(" ", "").split(",")
+    for interest in interests:
+        driver.find_element(By.XPATH, "/html/body/div[1]/div/div/article/div/div/div[2]/div/div/div/div/div/div/form/div[7]/div/div/div/span/span/span[1]/span/ul/li/input").send_keys(interest, Keys.ENTER)
 
     driver.find_element(By.CSS_SELECTOR, "#registerbutton").click()
     # driver.minimize_window()
